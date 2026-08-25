@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "name": "harbordesk",
+  "description": "HarborDesk: studio booking and invoicing — NestJS serves the React SPA + REST API on port 3000.",
+  "stack": {
+    "languages": ["typescript"],
+    "framework": "nestjs+react"
+  },
+  "services": [
+    {
+      "name": "app",
+      "type": "server",
+      "language": "typescript",
+      "cwd": "packages/backend",
+      "build_command": "pnpm --filter @ace-beta-starter/frontend build && pnpm --filter @ace-beta-starter/backend build",
+      "command": "node dist/main.js",
+      "port": 3000,
+      "health_check": "/api/health"
+    }
+  ],
+  "instance_init": {
+    "runtime": "node-20",
+    "build_tool": "pnpm",
+    "setup_script": "ace-setup.sh"
+  }
+}

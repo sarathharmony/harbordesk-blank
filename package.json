@@ -1,0 +1,18 @@
+{
+  "name": "ace-beta-starter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ACE starter app: NestJS REST API + React (Vite) SPA.",
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,magenta \"pnpm --filter @ace-beta-starter/backend start:dev\" \"pnpm --filter @ace-beta-starter/frontend dev\"",
+    "build": "pnpm --filter @ace-beta-starter/backend build && pnpm --filter @ace-beta-starter/frontend build",
+    "start": "pnpm --filter @ace-beta-starter/backend start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.12.0"
+}
