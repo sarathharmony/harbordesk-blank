@@ -1,0 +1,86 @@
+{
+  "clients": [
+    {
+      "id": "a5d8dde4-4720-4d7e-b589-090c19be9013",
+      "createdAt": "2026-08-25T03:20:36.017Z",
+      "name": "Test Visitor",
+      "email": "visitor@test.com",
+      "phone": "",
+      "notes": "Created via public booking page"
+    },
+    {
+      "id": "50094deb-44fa-420f-8239-72b9e72f303d",
+      "name": "Maya Chen",
+      "email": "maya@nightshift.audio",
+      "phone": "(415) 555-0142",
+      "notes": "Prefers Studio A. Brings own engineer.",
+      "createdAt": "2026-08-25T03:20:23.377Z"
+    },
+    {
+      "id": "f5bcbd2b-0605-4105-b980-b53e168fd1eb",
+      "name": "Jordan Blake",
+      "email": "jordan@blakephotos.com",
+      "phone": "(510) 555-0198",
+      "notes": "Portrait sessions, natural light setup.",
+      "createdAt": "2026-08-25T03:20:23.377Z"
+    },
+    {
+      "id": "7fe34dec-1e61-4c85-bf31-ffaadae1dcb2",
+      "name": "The Velvet Hours",
+      "email": "booking@velvethours.band",
+      "phone": "(628) 555-0103",
+      "notes": "Indie band — recurring monthly sessions.",
+      "createdAt": "2026-08-25T03:20:23.377Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "46a5c9db-2ea7-40b3-8fd4-2d3a0db2dc26",
+      "clientId": "50094deb-44fa-420f-8239-72b9e72f303d",
+      "start": "2026-08-26T14:00:00.000Z",
+      "end": "2026-08-26T17:00:00.000Z",
+      "room": "Studio A",
+      "status": "confirmed",
+      "hourlyRate": 85,
+      "createdAt": "2026-08-25T03:20:23.377Z"
+    },
+    {
+      "id": "596b2da3-8430-47f9-840b-c24e8f6d9d61",
+      "clientId": "f5bcbd2b-0605-4105-b980-b53e168fd1eb",
+      "start": "2026-08-30T10:00:00.000Z",
+      "end": "2026-08-30T13:00:00.000Z",
+      "room": "Studio B",
+      "status": "held",
+      "hourlyRate": 120,
+      "createdAt": "2026-08-25T03:20:23.377Z"
+    },
+    {
+      "id": "c8afec30-d1e2-4a67-9369-7d60e795f882",
+      "createdAt": "2026-08-25T03:20:36.018Z",
+      "clientId": "a5d8dde4-4720-4d7e-b589-090c19be9013",
+      "start": "2026-09-01T15:00:00.000Z",
+      "end": "2026-09-01T17:00:00.000Z",
+      "room": "Studio A",
+      "status": "held",
+      "hourlyRate": 85
+    }
+  ],
+  "invoices": [
+    {
+      "id": "08656637-7b7e-4c84-bdb2-59e93cb25e33",
+      "clientId": "50094deb-44fa-420f-8239-72b9e72f303d",
+      "bookingId": "46a5c9db-2ea7-40b3-8fd4-2d3a0db2dc26",
+      "lineItems": [
+        {
+          "description": "Studio A session (3 hrs @ $85/hr)",
+          "quantity": 3,
+          "unitPrice": 85,
+          "amount": 255
+        }
+      ],
+      "total": 255,
+      "status": "draft",
+      "createdAt": "2026-08-25T03:20:35.982Z"
+    }
+  ]
+}

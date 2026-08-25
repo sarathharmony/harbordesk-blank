@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+.env.local
+*.tgz
+.cursor
+.ace
+packages/frontend/package-lock.json
+packages/*/dist
