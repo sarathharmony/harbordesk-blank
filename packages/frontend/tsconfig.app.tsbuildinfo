@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/api.ts","./src/main.tsx","./src/lib/routing.tsx","./src/pages/BookingsPage.tsx","./src/pages/ClientsPage.tsx","./src/pages/InvoicesPage.tsx","./src/pages/PublicBookPage.tsx"],"version":"5.9.3"}
